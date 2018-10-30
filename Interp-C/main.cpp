@@ -1,6 +1,11 @@
 #include <iostream>
 
+#include "Interpreter.h"
+
 int main() {
-    std::cout << "Hello, World!" << std::endl;
+    char str[] = "#include <iostream>";
+    Interpreter intp;
+    intp.Parse(str);
+
     return 0;
 }

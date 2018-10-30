@@ -3,4 +3,4 @@ project(Interp_C)
 
 set(CMAKE_CXX_STANDARD 11)
 
-add_executable(Interp_C main.cpp)
+add_executable(Interp_C main.cpp Interpreter.cpp Interpreter.h VM/ISA.h)
