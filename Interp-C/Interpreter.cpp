@@ -31,7 +31,7 @@ void Interpreter::expression(int level) {
 }
 
 void Interpreter::next() {
-    if(*src == ' '){
+    while(*src == ' '){
         src++;
     }
     int tk = *src;

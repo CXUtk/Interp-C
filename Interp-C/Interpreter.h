@@ -23,6 +23,8 @@ private:
 
     int eval();
 
+
+    //---------------DATA--------------
     const char *src;
     Token token;
     int line;
