@@ -16,6 +16,7 @@ enum class TokenType {
 
 class Token {
 public:
+	Token() = default;
 	Token(TokenType type, int value);
 
 	~Token();
@@ -35,6 +36,8 @@ public:
 private:
 	TokenType type;
 	int value;
+	int line;
+	int col;
 };
 
 #endif //INTERP_C_TOKEN_H

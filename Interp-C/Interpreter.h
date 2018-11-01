@@ -6,7 +6,8 @@
 #define INTERP_C_INTERPRETER_H
 
 
-#include "Token.h"
+#include "FrontEnd/Token.h"
+#include "FrontEnd/Scanner.h"
 
 class Interpreter {
 public:
@@ -17,17 +18,8 @@ public:
     void Parse(const char *code);
 
 private:
-    void next();
-
-    void expression(int level);
-
-    int eval();
-
 
     //---------------DATA--------------
-    const char *src;
-    Token token;
-    int line;
 };
 
 
