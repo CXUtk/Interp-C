@@ -6,6 +6,8 @@
 #define INTERP_C_INTERPRETER_H
 
 
+#include "Token.h"
+
 class Interpreter {
 public:
     Interpreter();
@@ -22,7 +24,7 @@ private:
     int eval();
 
     const char *src;
-    int token;
+    Token token;
     int line;
 };
 

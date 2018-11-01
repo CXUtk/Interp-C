@@ -3,7 +3,7 @@
 #include "Interpreter.h"
 
 int main() {
-    char str[] = "#include <iostream>";
+    char str[] = "1 + 1";
     Interpreter intp;
     intp.Parse(str);
 
