@@ -6,6 +6,7 @@
 #define INTERP_C_SCANNER_H
 
 #include "Token.h"
+#include <stdexcept>
 
 class Scanner {
 public:
@@ -21,7 +22,18 @@ private:
 	int colNum;
 	Token curToken;
 
+	static std::map<int, TokenType> singleTokenType;
+
 	void extract();
+
+	void scanSpecialToken(int tk);
+
+	void assignToken(int tk);
+
+	void increase() {
+		src++;
+		colNum++;
+	}
 };
 
 
